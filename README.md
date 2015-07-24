@@ -2,6 +2,12 @@
 
 This repository is to share examples and documentations within the community. Feel free to extend and correct the content of this repo.
 
-## Documentations:
+Angular2 is currently under development: [Angular 2 Official Site](http://angular.io)
+
+Angular2 artifacts: [here&raquo;](https://code.angularjs.org/)
+
+## Non-official stuff:
+
+#### Documentations:
 
 [DOM Tools](docs/DOMTools.md)

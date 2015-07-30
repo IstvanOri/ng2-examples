@@ -6,8 +6,14 @@ Angular2 is currently under development: [Angular 2 Official Site](http://angula
 
 Angular2 artifacts: [here&raquo;](https://code.angularjs.org/)
 
+Angular2 discussion room: [Gitter](https://gitter.im/angular/angular)
+
 ## Non-official stuff:
 
 #### Documentations:
 
 [DOM Tools](docs/DOMTools.md)
+
+#### Examples:
+
+[File upload](examples/file-upload/)

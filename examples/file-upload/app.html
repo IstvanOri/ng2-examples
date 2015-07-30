@@ -1,0 +1,11 @@
+<div [ng-form-model]="getFormModel()">
+	<div>
+		<label class="input">Input file</label>
+		<!--
+		The FileModel directive will access the model and the control by dependency injection.
+		The value of file-control should be a name of a member of the form model.
+		 -->
+		<input type="file" name="file" file-control="file" />
+	</div>
+	<button type="submit" (click)="doSubmit()" >Submit</button>
+</div>

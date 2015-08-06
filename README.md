@@ -8,6 +8,8 @@ Angular2 artifacts: [here&raquo;](https://code.angularjs.org/)
 
 Angular2 discussion room: [Gitter](https://gitter.im/angular/angular)
 
+Plunkr sandbox: [Plunkr](http://plnkr.co/edit/GohfcaiNrwVRn8Hq42tM?p=preview) (Thanks for [Pawel Kozlowski](https://github.com/pkozlowski-opensource))
+
 ## Non-official stuff:
 
 #### Documentations:

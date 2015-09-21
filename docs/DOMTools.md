@@ -15,7 +15,7 @@ These tools don't need any extra directives to import and load.
 | HTML literal | HTML Type | Example |
 | ------------ | --------- | ------- |
 | (click) | attribute | `<button (click)="clicked()">'clicked()' method will run when click event occures on this button</button>`
-| (click) | attribute | `<button (^click)="clicked()">'clicked()' method will run when click event occures on this button or any child of this button</button>`
+| (^click) | attribute | `<button (^click)="clicked()">'clicked()' method will run when click event occures on this button or any child of this button</button>`
 
 #### Conditionals
 

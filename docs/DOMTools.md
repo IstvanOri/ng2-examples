@@ -14,19 +14,23 @@ These tools don't need any extra directives to import and load.
 
 | HTML literal | HTML Type | Example |
 | ------------ | --------- | ------- |
-| (click) | attribute | `<button (click)="clicked()">clicked() method will run on clicking</button>`
+| (click) | attribute | `<button (click)="clicked()">'clicked()' method will run when click event occures on this button</button>`
+| (click) | attribute | `<button (^click)="clicked()">'clicked()' method will run when click event occures on this button or any child of this button</button>`
 
 #### Conditionals
 
 | HTML literal | HTML Type | Example |
 | ------------ | --------- | ------- |
-| [hidden] | attribute | `<button [hidden]="condition">this element is hidden if the given condition is true</button>`
+| [hidden] | attribute | `<button [hidden]="condition">this element is hidden if the given 'condition' is true</button>`
 
 #### Data binding
 
 | HTML literal | HTML Type | Example |
 | ------------ | --------- | ------- |
-| [inner-html] | attribute | `<div [inner-html]="variable">The value of the variable</div>`
+| {{variable}} |     -     | `<div>{{variable}}</div><!-- The content of this div is the value of 'variable' -->`
+| [inner-html] | attribute | `<div [inner-html]="variable">The value of the 'variable'</div>`
+| [name] | attribute | `<div [name]="variable">The name attribute of this div is the value of 'variable'</div>`
+| [attr.role] | attribute | `<div [attr.role]="variable">The role attribute of this div is the value of 'variable'</div>`
 
 Directives
 ----------
@@ -37,8 +41,8 @@ The tools below need extra directives to import and load. The corresponding dire
 
 | HTML literal | HTML Type | Angular API | Angular Module | Example |
 | ------------ | --------- | ----------- | -------------- | ------- |
-| *ng-if | attribute | NgIf | angular2/angular2 | `<div *ng-if="isVisible()">Shown only if isVisible() returns true</div>`
-| *ng-for | attribute | NgFor | angular2/angular2 | `<li *ng-for="item of items">Creates a <li element for each item in the list of items></li>`
+| *ng-if | attribute | NgIf | angular2/angular2 | `<div *ng-if="isVisible()">Shown only if 'isVisible()' returns true</div>`
+| *ng-for | attribute | NgFor | angular2/angular2 | `<li *ng-for="item of items">Creates a <li> element for each 'item' in the list of 'items'></li>`
 
 #### Data binding
 

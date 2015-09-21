@@ -1,14 +1,14 @@
-import {Component, ControlGroup, FormBuilder, Injectable, NgFormModel, View} from 'angular2/angular2';
-import {formDirectives, bootstrap} from 'angular2/angular2';
-import {FileModel} from 'directive';
+import {Component, View, NgFormModel, FORM_DIRECTIVES, FormBuilder, ControlGroup} from 'angular2/angular2'
+import {FileModel} from './directive'
+
 @Component({
     selector: 'my-app',
 })
 @View({
     templateUrl: 'app.html',
-    directives: {FileModel, NgFormModel, formDirectives}
+    directives: [FileModel, NgFormModel, FORM_DIRECTIVES]
 })
-class App {
+export class App {
     builder: FormBuilder = new FormBuilder();
     model: ControlGroup;
 
@@ -30,10 +30,13 @@ class App {
         var formData = new FormData();
         formData.append('file', this.model.value["file"][0], this.model.value["file"][0].name);
 
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'yourUploadURL', true);
-        xhr.send(formData);
+        /*
+         * Uncomment this to send the file. 
+         */
+//        var xhr = new XMLHttpRequest();
+//        xhr.open('POST', 'yourUploadURL', true);
+//        xhr.send(formData);
+        
+        console.log(this.model.value["file"][0]);
     }
 }
-
-bootstrap(App);

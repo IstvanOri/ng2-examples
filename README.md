@@ -19,4 +19,5 @@ Plunkr sandbox: [Plunkr](http://plnkr.co/edit/GohfcaiNrwVRn8Hq42tM?p=preview) (T
 #### Examples:
 
 [File upload](examples/file-upload/)
+
 [Http](examples/http/)

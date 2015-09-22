@@ -1,0 +1,30 @@
+<p>
+	Press the button below to get random data from 
+	<a href="http://jsonplaceholder.typicode.com/">http://jsonplaceholder.typicode.com/</a>
+	(it's an awesome tool to make som random api calls over http).
+	
+	After getting the data, click on userId to get the user name (example for parameterized call). 
+</p>
+<div>
+	<button type="submit" (click)="doSubmit()" >Press Me!</button>
+</div>
+<div>
+	<table>
+		<thead>
+    		<tr>
+    			<th>Id</th>
+    			<th>Body</th>
+    			<th>Title</th>
+    			<th>UserId</th>
+    		</tr>
+   		</thead>
+   		<tbody>
+    		<tr *ng-for="#post of posts">
+    			<td>{{post.id}}</td>
+    			<td>{{post.body}}</td>
+    			<td>{{post.title}}</td>
+    			<td style="cursor: pointer; color: blue;" (click)="getUserById(post.userId)">{{post.userId}}</td>
+    		</tr>
+   		</tbody>
+  	</table>
+</div>
